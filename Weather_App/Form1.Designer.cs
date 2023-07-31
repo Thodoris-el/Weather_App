@@ -39,6 +39,8 @@
             this.lbWind = new System.Windows.Forms.Label();
             this.lbPressure = new System.Windows.Forms.Label();
             this.picWeather = new System.Windows.Forms.PictureBox();
+            this.lbTemparature = new System.Windows.Forms.Label();
+            this.FLP = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picWeather)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,16 +50,16 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(227, 255);
+            this.label1.Location = new System.Drawing.Point(218, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 53);
+            this.label1.Size = new System.Drawing.Size(66, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "City:";
             // 
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCity.Location = new System.Drawing.Point(332, 252);
+            this.txtCity.Location = new System.Drawing.Point(323, 118);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(509, 42);
             this.txtCity.TabIndex = 1;
@@ -69,7 +71,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(888, 249);
+            this.btnSearch.Location = new System.Drawing.Point(879, 115);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(116, 45);
             this.btnSearch.TabIndex = 2;
@@ -83,7 +85,7 @@
             this.lbCondition.BackColor = System.Drawing.Color.Transparent;
             this.lbCondition.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCondition.ForeColor = System.Drawing.Color.White;
-            this.lbCondition.Location = new System.Drawing.Point(214, 507);
+            this.lbCondition.Location = new System.Drawing.Point(205, 373);
             this.lbCondition.Name = "lbCondition";
             this.lbCondition.Size = new System.Drawing.Size(127, 35);
             this.lbCondition.TabIndex = 3;
@@ -95,7 +97,7 @@
             this.lbDetails.BackColor = System.Drawing.Color.Transparent;
             this.lbDetails.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDetails.ForeColor = System.Drawing.Color.White;
-            this.lbDetails.Location = new System.Drawing.Point(214, 600);
+            this.lbDetails.Location = new System.Drawing.Point(205, 466);
             this.lbDetails.Name = "lbDetails";
             this.lbDetails.Size = new System.Drawing.Size(91, 35);
             this.lbDetails.TabIndex = 4;
@@ -107,7 +109,7 @@
             this.lbSunrise.BackColor = System.Drawing.Color.Transparent;
             this.lbSunrise.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSunrise.ForeColor = System.Drawing.Color.White;
-            this.lbSunrise.Location = new System.Drawing.Point(214, 691);
+            this.lbSunrise.Location = new System.Drawing.Point(205, 557);
             this.lbSunrise.Name = "lbSunrise";
             this.lbSunrise.Size = new System.Drawing.Size(157, 35);
             this.lbSunrise.TabIndex = 5;
@@ -120,7 +122,7 @@
             this.lbSunset.BackColor = System.Drawing.Color.Transparent;
             this.lbSunset.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSunset.ForeColor = System.Drawing.Color.White;
-            this.lbSunset.Location = new System.Drawing.Point(214, 779);
+            this.lbSunset.Location = new System.Drawing.Point(205, 639);
             this.lbSunset.Name = "lbSunset";
             this.lbSunset.Size = new System.Drawing.Size(150, 35);
             this.lbSunset.TabIndex = 6;
@@ -132,7 +134,7 @@
             this.lbWind.BackColor = System.Drawing.Color.Transparent;
             this.lbWind.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWind.ForeColor = System.Drawing.Color.White;
-            this.lbWind.Location = new System.Drawing.Point(958, 507);
+            this.lbWind.Location = new System.Drawing.Point(949, 373);
             this.lbWind.Name = "lbWind";
             this.lbWind.Size = new System.Drawing.Size(211, 35);
             this.lbWind.TabIndex = 7;
@@ -144,7 +146,7 @@
             this.lbPressure.BackColor = System.Drawing.Color.Transparent;
             this.lbPressure.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPressure.ForeColor = System.Drawing.Color.White;
-            this.lbPressure.Location = new System.Drawing.Point(958, 600);
+            this.lbPressure.Location = new System.Drawing.Point(949, 466);
             this.lbPressure.Name = "lbPressure";
             this.lbPressure.Size = new System.Drawing.Size(172, 35);
             this.lbPressure.TabIndex = 8;
@@ -153,12 +155,34 @@
             // picWeather
             // 
             this.picWeather.BackColor = System.Drawing.Color.Transparent;
-            this.picWeather.Location = new System.Drawing.Point(226, 353);
+            this.picWeather.Location = new System.Drawing.Point(217, 219);
             this.picWeather.Name = "picWeather";
             this.picWeather.Size = new System.Drawing.Size(202, 141);
             this.picWeather.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picWeather.TabIndex = 9;
             this.picWeather.TabStop = false;
+            // 
+            // lbTemparature
+            // 
+            this.lbTemparature.AutoSize = true;
+            this.lbTemparature.BackColor = System.Drawing.Color.Transparent;
+            this.lbTemparature.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemparature.ForeColor = System.Drawing.Color.White;
+            this.lbTemparature.Location = new System.Drawing.Point(949, 219);
+            this.lbTemparature.Name = "lbTemparature";
+            this.lbTemparature.Size = new System.Drawing.Size(161, 35);
+            this.lbTemparature.TabIndex = 10;
+            this.lbTemparature.Text = "Temparature";
+            // 
+            // FLP
+            // 
+            this.FLP.AutoScroll = true;
+            this.FLP.BackColor = System.Drawing.Color.Transparent;
+            this.FLP.Location = new System.Drawing.Point(98, 677);
+            this.FLP.Name = "FLP";
+            this.FLP.Size = new System.Drawing.Size(1720, 266);
+            this.FLP.TabIndex = 11;
+            this.FLP.WrapContents = false;
             // 
             // Form1
             // 
@@ -167,6 +191,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1222);
+            this.Controls.Add(this.FLP);
+            this.Controls.Add(this.lbTemparature);
             this.Controls.Add(this.picWeather);
             this.Controls.Add(this.lbPressure);
             this.Controls.Add(this.lbWind);
@@ -198,6 +224,8 @@
         private System.Windows.Forms.Label lbWind;
         private System.Windows.Forms.Label lbPressure;
         private System.Windows.Forms.PictureBox picWeather;
+        private System.Windows.Forms.Label lbTemparature;
+        private System.Windows.Forms.FlowLayoutPanel FLP;
     }
 }
 

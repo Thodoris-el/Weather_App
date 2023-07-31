@@ -1,3 +1,11 @@
 key: cbec624ef2c60055a21f567c45b3fd47
 
+
+https://api.openweathermap.org/data/2.5/onecall?lat=44.34&lon=10.99&appid=cbec624ef2c60055a21f567c45b3fd47
 https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=cbec624ef2c60055a21f567c45b3fd47
+
+https://api.openweathermap.org/data/2.5/forecast/forecast?lat=44.34&lon=10.99&appid=cbec624ef2c60055a21f567c45b3fd47
+
+api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&exclude=current,minutely,hourly,alerst&appid=cbec624ef2c60055a21f567c45b3fd47
+
+https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=cbec624ef2c60055a21f567c45b3fd47
