@@ -99,6 +99,7 @@
             this.Controls.Add(this.lbWCondition);
             this.Controls.Add(this.lbDay);
             this.Controls.Add(this.picWIcon);
+            this.DoubleBuffered = true;
             this.Name = "ForecastUC";
             this.Size = new System.Drawing.Size(573, 207);
             this.Load += new System.EventHandler(this.ForecastUC_Load);

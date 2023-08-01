@@ -37,7 +37,6 @@ namespace Weather_App
         }
 
         string APIkey = "cbec624ef2c60055a21f567c45b3fd47";
-        string GAPIKey = "AIzaSyD5BldcLO-a8pYTztpcyO5ZRuFPSUc9h_U";
         void getWeather()
         {
             using (WebClient web = new WebClient())
@@ -122,6 +121,11 @@ namespace Weather_App
                 }
 
             }
+        }
+
+        private void FLP_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -183,6 +183,7 @@
             this.FLP.Size = new System.Drawing.Size(1720, 266);
             this.FLP.TabIndex = 11;
             this.FLP.WrapContents = false;
+            this.FLP.Paint += new System.Windows.Forms.PaintEventHandler(this.FLP_Paint);
             // 
             // Form1
             // 
